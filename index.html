@@ -14,7 +14,9 @@
 <body>
   <div class="container">
     <div class="main">
-      <img src="image.jpg" class="image" />
+      <video autoplay loop preload="none" style="width:1560px;">
+        <source src="assets/tatry.mp4" type="video/mp4" />
+      </video>
     </div>
     <div class="right">
       <div class="box">
@@ -30,6 +32,14 @@
       </div>
     </div>
   </div>
+
+  <script>
+    window.setInterval("reloadIFrame();", 20000);
+
+    function reloadIFrame() {
+      document.getElementById('slideFrame').src = document.getElementById('slideFrame').src;
+    }
+  </script>
 
 </body>
 
